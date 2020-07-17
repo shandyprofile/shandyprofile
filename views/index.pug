@@ -1,0 +1,234 @@
+﻿extends layout
+
+block content
+    // Navbar (sit on top)
+    .w3-top
+        #myNavbar.w3-bar.menu-bar
+            a.w3-bar-item.w3-button.w3-hover-black.w3-hide-medium.w3-hide-large.w3-right(href='javascript:void(0);', onclick='toggleFunction()', title='Toggle Navigation Menu')
+                i.fa.fa-bars
+            a.w3-bar-item.w3-button(href='#home') HOME
+            a.w3-bar-item.w3-button.w3-hide-small(href='#about')
+                i.fa.fa-user  ABOUT
+            a.w3-bar-item.w3-button.w3-hide-small(href='#hobby')
+                i.fa.fa-th  HOBBY
+            a.w3-bar-item.w3-button.w3-hide-small(href='#contact')
+                i.fa.fa-envelope  CONTACT
+            a.w3-bar-item.w3-button.w3-hide-small.w3-right.w3-hover-red(href='#')
+                i.fa.fa-search
+        // Navbar on small screens
+        #navDemo.w3-bar-block.w3-white.w3-hide.w3-hide-large.w3-hide-medium
+            a.w3-bar-item.w3-button(href='#about', onclick='toggleFunction()') ABOUT
+            a.w3-bar-item.w3-button(href='#portfolio', onclick='toggleFunction()') PORTFOLIO
+            a.w3-bar-item.w3-button(href='#contact', onclick='toggleFunction()') CONTACT
+            a.w3-bar-item.w3-button(href='#') SEARCH
+    // First Parallax Image with Logo Text
+    #home.bgimg-1.w3-display-container.w3-opacity-min
+        .w3-display-middle(style='white-space:nowrap;')
+            span.w3-center.w3-padding-large.w3-white.w3-xlarge.w3-wide.w3-animate-opacity.w3-opacity.w3-hover-opacity-off SHANDY 
+                span.w3-hide-small  NGUYEN
+    // Container (About Section)
+    #about.w3-content.w3-container.w3-padding-64
+        h3.w3-center ABOUT ME
+        p.w3-center
+            em I'm Shandy Nguyen
+        .w3-col.m7
+            .w3-row
+                h3 Persion detail:
+            .w3-row
+                .w3-col.m5 Full name's :
+                .w3-col.m7 Hieu, Nguyen Trung
+            .w3-row
+                .w3-col.m5 Nick name :
+                .w3-col.m7 Sunhappy
+            .w3-row
+                .w3-col.m5 Date of birth :
+                .w3-col.m7 May 17th, 1994
+            .w3-row
+                .w3-col.m5 Place of birth :
+                .w3-col.m7 Vung Liem, Vinh Long
+            .w3-row
+                .w3-col.m5 Address :
+                .w3-col.m7 Vung Liem, Vinh Long
+            .w3-row
+                .w3-col.m5 Phone number :
+                .w3-col.m7 0985847372
+            .w3-row
+                .w3-col.m5 E-mail & Skype:
+                .w3-col.m7 hieu17594@gmail.com
+            .w3-row
+            .w3-row
+                h3 Education:
+            .w3-row
+                .w3-center MSC (Master Computer Science)
+                .w3-center Can Tho University
+            .w3-row
+                .w3-col.m5 Languages :
+                .w3-col.m7 English, Japanese
+            .w3-row
+                .w3-col.m5 Achievement :
+                .w3-col.m7
+                    span Two scholarships of Can Tho University.
+                    br
+                    span Two scholarships of Vinh Long group.
+            .w3-row
+                .w3-col.m5 Kind of graduate :
+                .w3-col.m7 Good
+
+        .w3-col.m5
+            img.w3-round.w3-image(src='/images/avatar_1.jpg', alt='Photo of Me')
+            //img.w3-round.w3-image.w3-opacity.w3-hover-opacity-off(src='/images/img_avatar_1.jpg', alt='Photo of Me', width='500', height='333')
+        .w3-row
+            p.w3-large.w3-center.w3-padding-16 Specialized Skills
+            #Skillity-menu
+
+                //    p.w3-wide
+                        i.fa.fa-camera
+                    p.w3-wide
+                        i.fa.fa-laptop Web Design
+                        i.fa.fa-laptop Application
+                        i.fa.fa-photo Photoshop
+        .w3-row
+            p.w3-large.w3-center.w3-padding-16 Key Skills
+                .w3-left.w3-col.s12.m12
+                    p.w3-col.m4.w3-padding-2 Im really good at algorithms:
+                    .w3-col.m8
+                        p Fingerprint from fingerprint library.
+                        p Face recognite from OpenCV, CNTK, Tensorflow.
+                        p NFC (Near-Field Communications).
+                        p GPS and accuracy algorithms.
+                        p Barcode
+                        p Parallel
+                .w3-col.s12.m12.w3-left.w3-light-gray
+                    p.w3-col.m4.w3-padding-2 Models:
+                    .w3-col.m8
+                        p WPF (MVVM - Scss)
+                        p Web service API.
+                .w3-col.s12.m12.w3-left
+                    p.w3-col.m4.w3-padding-2 OS:
+                    .w3-col.m8
+                        p Window / Linux.
+                        p Build linux and kernel of mini-board.
+
+        .w3-row
+            p.w3-large.w3-center.w3-padding-16 Work Experience
+            .w3-row.w3-center.w3-dark-grey
+                p.w3-col.m4.s4 Place
+                p.w3-col.m4.s4 Location
+                p.w3-col.m4.s4 Time
+            .w3-row.w3-center.w3-light-grey
+                p.w3-col.m4.s4 TMA Solution
+                p.w3-col.m4.s4 Engineer
+                p.w3-col.m4.s4 2016 - 2017
+                p.w3-col.m4.s4 RYNAN Technology
+                p.w3-col.m4.s4 R&D: Investigate System
+                p.w3-col.m4.s4 2017 - 2019
+                p.w3-col.m4.s4 Deltabrains
+                p.w3-col.m4.s4 Leader Image Processing
+                p.w3-col.m4.s4 2019 - Now
+    .w3-row.w3-center.w3-dark-grey.w3-padding-16
+        .w3-third.w3-section
+            span.w3-xlarge 30+
+            br
+            span Partners
+        .w3-third.w3-section
+            span.w3-xlarge 12+
+            br
+            span Projects Done
+        .w3-third.w3-section
+            span.w3-xlarge 90+
+            br
+            span Happy Clients
+    // Second Parallax Image with Portfolio Text
+    .bgimg-2.w3-display-container.w3-opacity-min
+        .w3-display-middle
+            span.w3-xxlarge.w3-text-white.w3-wide HOBBY
+    // Container (Portfolio Section)
+    #hobby.w3-content.w3-container.w3-padding-64
+        h3.w3-center HOBBY
+        .w3-row
+            p.w3-large.w3-center.w3-padding-16 Discovery
+            .w3-row-padding.w3-center
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/img_picture_1.jpg', style='width:100%', onclick='onClick(this)', alt='The mist over the mountains')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/img_picture_2.jpg', style='width:100%', onclick='onClick(this)', alt='Coffee beans')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/img_picture_3.jpg', style='width:100%', onclick='onClick(this)', alt='Bear closeup')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/img_picture_4.jpg', style='width:100%', onclick='onClick(this)', alt='Quiet ocean')
+                .w3-row-padding.w3-center.w3-section
+                .w3-col.m3
+                    .w3-row-padding.w3-center.w3-section
+                        img.w3-hover-opacity(src='/images/img_picture_5.jpg', style='width:100%', onclick='onClick(this)', alt='The mist')
+                    .w3-row-padding.w3-center
+                        img.w3-hover-opacity(src='/images/img_picture_6.jpg', style='width:100%', onclick='onClick(this)', alt='The mist')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/img_picture_7.jpg', style='width:100%', onclick='onClick(this)', alt='My beloved typewriter')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/img_picture_8.jpg', style='width:100%', onclick='onClick(this)', alt='Empty ghost train')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/img_picture_9.jpg', style='width:100%', onclick='onClick(this)', alt='Sailing')
+                //button.w3-button.w3-padding-large.w3-light-grey(style='margin-top:64px') LOAD MORE
+        .w3-row
+            p.w3-large.w3-center.w3-padding-16 Reading book
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/b1.jpg', style='width:100%', onclick='onClick(this)', alt='The mist over the mountains')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/b2.jpg', style='width:100%', onclick='onClick(this)', alt='Coffee beans')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/b3.jpg', style='width:100%', onclick='onClick(this)', alt='Bear closeup')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/b4.jpg', style='width:100%', onclick='onClick(this)', alt='Quiet ocean')
+        .w3-row
+            p.w3-large.w3-center.w3-padding-16 Dance
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/d1.jpg', style='width:100%', onclick='onClick(this)', alt='The mist over the mountains')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/d2.jpg', style='width:100%', onclick='onClick(this)', alt='Coffee beans')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/d3.jpeg', style='width:100%', onclick='onClick(this)', alt='Bear closeup')
+                .w3-col.m3
+                    img.w3-hover-opacity(src='/images/d4.jpg', style='width:100%', onclick='onClick(this)', alt='Quiet ocean')
+    // Modal for full size images on click
+    #modal01.w3-modal.w3-black(onclick="this.style.display='none'")
+        span.w3-button.w3-large.w3-black.w3-display-topright(title='Close Modal Image')
+            i.fa.fa-remove
+        .w3-modal-content.w3-animate-zoom.w3-center.w3-transparent.w3-padding-64
+            img#img01.w3-image
+        p#caption.w3-opacity.w3-large
+    // Third Parallax Image with Portfolio Text
+    .bgimg-3.w3-display-container.w3-opacity-min
+        .w3-display-middle
+            span.w3-xxlarge.w3-text-white.w3-wide CONTACT
+    // Container (Contact Section)
+    #contact.w3-content.w3-container.w3-padding-64
+        h3.w3-center CONTACT ME
+        .w3-panel
+            .w3-large.w3-margin-bottom
+                i.fa.fa-map-marker.w3-hover-text-black.w3-xlarge.w3-margin-right   Ninh Kieu, Can Tho city
+                br
+                i.fa.fa-phone.w3-hover-text-black.w3-xlarge.w3-margin-right   Phone: 0985847372
+                br
+                i.fa.fa-envelope.w3-hover-text-black.w3-xlarge.w3-margin-right   Email: hieu17594@mail.com
+                p Swing by for a cup of
+                    i.fa.fa-coffee , or leave me a note:
+                form(method="post" action="/submitEmail")
+                    .w3-row-padding(style='margin:0 -16px 8px -16px')
+                        .w3-half
+                            input.w3-input.w3-border(type='text', placeholder='Name', required='', name='Name')
+                        .w3-half
+                            input.w3-input.w3-border(type='text', placeholder='Email', required='', name='Email')
+                    input.w3-input.w3-border(type='text', placeholder='Message', required='', name='Message')
+                    button.w3-button.w3-black.w3-right.w3-section(type='submit')
+                        i.fa.fa-paper-plane SEND MESSAGE
+    // Footer
+    footer.w3-center.w3-black.w3-padding-64.w3-opacity.w3-hover-opacity-off
+        a.w3-button.w3-light-grey(href='#home')
+            i.fa.fa-arrow-up.w3-margin-right To the top
+        .w3-xlarge.w3-section
+            i.fa.fa-facebook-official.w3-hover-opacity
+            i.fa.fa-instagram.w3-hover-opacity
+            i.fa.fa-snapchat.w3-hover-opacity
+            i.fa.fa-pinterest-p.w3-hover-opacity
+            i.fa.fa-twitter.w3-hover-opacity
+            i.fa.fa-linkedin.w3-hover-opacity
